@@ -14,6 +14,18 @@ MNVR (Mobile Network Video Recorder) is an in-vehicle device for heavy vehicles 
 | Backend communication | Two-way TCP link: the device sends data, the backend sends commands | [Backend Communication (TCP)](product/features/backend-tcp.md) |
 | Voice calls | Voice communication with the vehicle | [Voice Calls](product/features/voice-calls.md) |
 
+## Product sections
+
+The functionality is organised into five sections, each with a flow description and a checklist of features:
+
+| Section | Covers | Pages |
+|---|---|---|
+| Camera Management | 8 cameras, recording, storage, panic-press FTP upload, display, playback | [Overview](sections/camera/overview.md) · [Checklist](sections/camera/checklist.md) |
+| PIS Management | Route data, LED display boards, automatic and manual announcements | [Overview](sections/pis/overview.md) · [LED](sections/pis/led-display.md) · [Audio](sections/pis/audio-announcements.md) |
+| CAN Health Monitoring | Vehicle parameters from CAN, thresholds, alerts, driver warnings | [Overview](sections/can-health/overview.md) · [Checklist](sections/can-health/checklist.md) |
+| Backend Communication | TCP link, tracking and health packets, commands, FTP transfers | [Overview](sections/backend/overview.md) · [Packets](sections/backend/packets.md) · [Checklist](sections/backend/checklist.md) |
+| Settings Management | Not defined yet | [Overview](sections/settings/overview.md) |
+
 ## How the pieces fit
 
 The device sits in the vehicle and connects to cameras, the vehicle's CAN bus, a GNSS antenna, and audio hardware for calls. It reaches the backend server over a 4G mobile connection. See [System Architecture](product/architecture.md) for the diagram.

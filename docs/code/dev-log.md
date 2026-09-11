@@ -24,6 +24,23 @@ Template:
 
 ---
 
+## 2026-09-11: Product sections added
+
+**Done**
+- New "Product Sections" sidebar card with five areas: Camera Management, PIS Management (LED display, audio announcements), CAN Health Monitoring, Backend Communication (with a packet catalogue), Settings Management.
+- Each area has a flow description and checklists. Items tagged [given] came from the product owner; everything else is a proposal for review.
+
+**Decisions**
+- None.
+
+**Next**
+- Product owner reviews the checklists: confirm, edit or delete proposed items.
+- Describe the remaining backend packets and the settings requirements.
+- Decide the open items listed under "Decisions needed" on each overview page (camera type and storage, LED board protocol, announcement source, CAN decoding location, backend message format).
+
+**Open issues**
+- None.
+
 ## 2026-09-11: Baseboard V2.1 schematic documented
 
 **Done**

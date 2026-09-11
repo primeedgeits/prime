@@ -34,3 +34,4 @@ Cameras connect to the MPU motherboard, not the baseboard, and the MPU handles a
 
 - [Backend Communication (TCP)](backend-tcp.md)
 - [Hardware](../hardware.md)
+- [Camera Management: Overview & Flow](../../sections/camera/overview.md) and [Checklist](../../sections/camera/checklist.md)

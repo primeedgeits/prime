@@ -30,3 +30,4 @@ The baseboard has a complete call audio path: the 4G module's PCM interface ↔ 
 
 - [Backend Communication (TCP)](backend-tcp.md)
 - [Hardware](../hardware.md)
+- [Audio Announcements](../../sections/pis/audio-announcements.md) (calls take priority over announcements)

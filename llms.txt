@@ -23,6 +23,25 @@ How to use these docs (for AI assistants):
 - [Idea Backlog](docs/ideas/backlog.md): Ideas that are not yet agreed features
 - [Roadmap](docs/ideas/roadmap.md): Development phases and milestones
 
+## Product Sections
+
+- Camera Management
+  - [Overview & Flow](docs/sections/camera/overview.md): From the 8 cameras to a clip on the backend FTP server
+  - [Functionality Checklist](docs/sections/camera/checklist.md): Integration, recording, storage, event upload, display, playback, health
+- PIS Management
+  - [Overview & Flow](docs/sections/pis/overview.md): Route data, trip start, automatic announcements, manual control, content updates
+  - [LED Display Updates](docs/sections/pis/led-display.md): Destination and inside display boards
+  - [Audio Announcements](docs/sections/pis/audio-announcements.md): Next-stop and other announcements, priorities, content
+- CAN Health Monitoring
+  - [Overview & Flow](docs/sections/can-health/overview.md): From CAN frames to health values, alerts and driver warnings
+  - [Functionality Checklist](docs/sections/can-health/checklist.md): Bus set-up, parameters, decoding, thresholds, reporting
+- Backend Communication
+  - [Overview & Flow](docs/sections/backend/overview.md): Connection lifecycle, tracking, health, events, commands, file transfers
+  - [Packet Catalogue](docs/sections/backend/packets.md): Tracking, health and other packets, in both directions
+  - [Functionality Checklist](docs/sections/backend/checklist.md): Connection, security, packets, store-and-forward, commands
+- Settings Management
+  - [Overview](docs/sections/settings/overview.md): Nothing defined yet; proposed settings areas
+
 ## Product Documentation
 
 - Features

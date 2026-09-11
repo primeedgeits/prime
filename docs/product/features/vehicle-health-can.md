@@ -47,3 +47,4 @@ The message IDs and decoding are in the [CAN Signal Map](../../code/can-signals.
 
 - [CAN Signal Map](../../code/can-signals.md)
 - [Hardware](../hardware.md)
+- [CAN Health Monitoring: Overview & Flow](../../sections/can-health/overview.md) and [Checklist](../../sections/can-health/checklist.md)

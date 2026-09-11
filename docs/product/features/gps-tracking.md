@@ -30,3 +30,4 @@ The GNSS receiver (Quectel L89 / L86 / LC86L footprint) is on the baseboard and 
 
 - [Device ↔ Backend TCP Protocol](../../code/tcp-protocol.md)
 - [Hardware](../hardware.md)
+- [PIS Management](../../sections/pis/overview.md) (stop announcements from position) and [Backend Communication](../../sections/backend/overview.md) (tracking packets)

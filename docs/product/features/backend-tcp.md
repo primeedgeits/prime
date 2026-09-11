@@ -36,3 +36,4 @@ The MPU owns the backend link. The 4G module (mini PCIe socket on the baseboard,
 
 - [Device ↔ Backend TCP Protocol](../../code/tcp-protocol.md): message-level specification
 - [System Architecture](../architecture.md)
+- [Backend Communication: Overview & Flow](../../sections/backend/overview.md), [Packet Catalogue](../../sections/backend/packets.md) and [Checklist](../../sections/backend/checklist.md)
