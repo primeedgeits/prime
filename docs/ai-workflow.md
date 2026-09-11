@@ -73,6 +73,19 @@ The web fetch tool can summarise long pages, so for exact details such as messag
 
 Claude Code on any of these surfaces needs a paid claude.ai plan (Pro, Max, Team or Enterprise).
 
+## Editing without the PC (phone only)
+
+The PC is not needed. GitHub Pages builds the site from the repository on GitHub's servers, so anything that changes the files on GitHub updates the site within a minute or two. From a phone:
+
+| Way | How | Needs |
+|---|---|---|
+| Claude Code cloud session | Claude app → **Code** → **Cloud** (or https://claude.ai/code in the phone's browser) → choose `primeedgeits/prime` → describe the change. The session runs on Anthropic's servers, reads `CLAUDE.md`, edits, and pushes or opens a pull request; merge the pull request in the GitHub app | Paid claude.ai plan |
+| claude.ai chat with the GitHub connector | Way B above; usable in the phone app once the connector is set up in Settings | claude.ai plan with custom connectors |
+| OpenAI Codex | ChatGPT app or https://chatgpt.com/codex → connect GitHub → choose the repository → describe the change. It works in a cloud sandbox and opens a pull request; merge it in the GitHub app. Codex reads `AGENTS.md`, which is kept identical to `CLAUDE.md`, so it follows the same rules | Paid ChatGPT plan |
+| GitHub website in the phone's browser | Open the file on https://github.com/primeedgeits/prime, tap the pencil icon, edit, **Commit changes**. Any AI chat can draft the text to paste in | Free |
+
+Remote control of a PC session (way D) is only for when the session should run on the PC itself; it is not required for editing the site.
+
 ## Project instructions for claude.ai (paste into the Project)
 
 ```markdown

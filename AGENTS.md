@@ -2,7 +2,7 @@
 
 Product and code documentation for MNVR, an in-vehicle video recorder for buses. Published at https://primeedgeits.github.io/prime/ by GitHub Pages from the `main` branch.
 
-This file (read by Claude Code) and `AGENTS.md` (read by Codex and other agents) must stay identical apart from this paragraph. When you change one, change the other.
+This file (read by Codex and other agents) and `CLAUDE.md` (read by Claude Code) must stay identical apart from this paragraph. When you change one, change the other.
 
 ## How it works
 
