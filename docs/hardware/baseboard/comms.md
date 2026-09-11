@@ -23,7 +23,7 @@ flowchart LR
 
 Hub power: +5V through R49 4.7 Ω to Vhub; 3.3 V from the +3.3V rail. Upstream 22 Ω series resistors R50/R51.
 
-The user's description places the touch panel on a direct MPU port and the USB audio on the hub; the schematic shows the reverse. **Open question**, see [MPU Motherboard](../mpu-board.md).
+Which of the touch panel and the USB audio chip is on hub port 1 and which is on the direct port varies by project; the schematic shows the arrangement above. See [MPU Motherboard](../mpu-board.md).
 
 ## 4G module (J2)
 
@@ -63,7 +63,7 @@ Claude's note: the module reaches the internet for the MPU. How the MPU uses it 
 
 - The MCU's two CAN controllers (CAN1 on PA11/PA12, CAN2 on PB12/PB13) go at 3.3 V logic to **P5**, the CAN add-on board's MCU-side header, along with +5 V.
 - The add-on's transceivers return CAN_H/CAN_L for both channels on **P6**, which is routed to **P13** pins 1–4.
-- Transceiver part, isolation and termination are on the add-on board: TBD.
+- The known add-on board ([CAN Add-on](../addons/can.md)) carries one SN65HVD1050 transceiver for channel 1 only; CAN2 needs a second board or a different variant (open question). Termination options are on that board.
 - Bit rate is set in firmware. See [CAN Signal Map](../../code/can-signals.md) for the bus settings and signals.
 
 ## RS-485

@@ -29,18 +29,16 @@ The MPU (application processor) board is the main computer of the MNVR. It plugs
 - Backend communication over the 4G module (USB).
 - Voice call control (4G module AT commands and audio switch selection, verify).
 
-## USB topology: description vs schematic
+## USB topology
 
-The user described the MPU's two USB ports as: one directly to the monitor's touch panel, the other to the 4-port hub (USB audio, USB-to-RS-485, external USB, 4G module).
-
-The baseboard V2.1 schematic shows a different arrangement:
+The MPU has two USB host ports going to the baseboard on P9:
 
 | MPU USB port | Baseboard path | Device |
 |---|---|---|
-| Port A (P9 pins 1–2, "HUBIN") | HS8836A hub | Port 1: monitor touch (P10) · Port 2: 4G module · Port 3: CP2102N USB-RS-485 · Port 4: external USB (P7/P13) |
-| Port B (P9 pins 4–5, "USB1_AUDIO") | direct | CM108B USB audio |
+| Port A (P9 pins 1–2, "HUBIN") | HS8836A hub | Port 1: touch panel or USB audio (see below) · Port 2: 4G module · Port 3: CP2102N USB-RS-485 · Port 4: external USB (P7/P13) |
+| Port B (P9 pins 4–5, "USB1_AUDIO") | direct | USB audio or touch panel (see below) |
 
-So on this schematic the touch panel is behind the hub and the USB audio chip is the direct connection. **Open question:** which is correct for the current build? (The schematic is dated 2023; a later revision may have swapped them.)
+**Which of the touch panel and the USB audio chip sits on hub port 1, and which on the direct port, varies by project** (confirmed by the user). The baseboard V2.1 schematic shows the touch panel on hub port 1 and the CM108B USB audio on the direct port. Record the arrangement per project build.
 
 Also, the USB audio chip is a CM108B, which the MPU sees as a standard USB audio device with analogue output. Its I2S pins are unconnected, so "USB to I2S" in the description may refer to a different part on a newer build. Verify.
 

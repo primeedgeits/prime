@@ -12,8 +12,8 @@
 | CODEC-MIC_P / CODEC-MIC_N | Microphone into the call | Switch U5 | U6 ALC5616 IN2P/IN2N with MICBIAS1 |
 | ANNOUNCE_L / ANNOUNCE_R | Announcement audio to the amplifier | Switch U4 | Amplifier add-on P3 |
 | MIC_P / MIC_N | External differential microphone | P14 pins 7–8 (with ESD and filtering) | Switch U5 |
-| SPK_L, SPK_R | Passenger speakers (stereo) | Amplifier add-on P4 | P14 pins 1–4 |
-| DRIVER_SPK | Driver speaker | Amplifier add-on P4 | P14 pins 5–6 |
+| SPK_L, SPK_R | Passenger speakers. One mono bridged channel; the amplifier sums ANNOUNCE_L and ANNOUNCE_R and the two speaker outputs are wired in series (verify) | [Amplifier add-on](../addons/amplifier.md) P4 | P14 pins 1–4 |
+| DRIVER_SPK | Driver speaker, fed from CALL_SPK | [Amplifier add-on](../addons/amplifier.md) P4 | P14 pins 5–6 |
 | HPO_L / HPO_R | Codec headphone output | U6 | P15 header (unused, verify) |
 
 ## The two switches
@@ -56,7 +56,7 @@ The microphone can also carry a push-to-talk switch: **MIC-SW** (P14 pin 9) is w
 ## Open questions
 
 - Which physical speakers are "passenger" (SPK_L/R) and "driver" (DRIVER_SPK) in the bus installation?
-- Amplifier add-on: part number, output power, schematic.
+- Speaker impedance and count on each amplifier output (see [Amplifier Add-on](../addons/amplifier.md)).
 - SEL polarities for U4 and U5.
 - The description mentions "USB to I2S"; on this schematic the USB audio chip is analogue. Is there a newer board?
 - Should calls be audible to passengers (announce path) or only to the driver?

@@ -15,6 +15,8 @@ Pinouts were read from the schematic netlist. Where the drawing is ambiguous the
 
 ## Add-on boards
 
+The boards themselves are described on [Amplifier Add-on](../addons/amplifier.md) and [CAN Add-on](../addons/can.md), including the pin mapping at their end of each cable.
+
 | Ref | Label | Pins | Purpose | Pinout |
 |---|---|---|---|---|
 | P3 | Header 7 | 7 | Amplifier add-on: power and audio inputs | 1 +12Vout · 2 GND · 3 ANNOUNCE_L · 4 (not identified, verify) · 5 ANNOUNCE_R · 6 CALL_SPK_P · 7 CALL_SPK_N |

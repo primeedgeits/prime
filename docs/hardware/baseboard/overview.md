@@ -95,8 +95,8 @@ flowchart TB
 
 | Item | Where | Connector |
 |---|---|---|
-| CAN transceivers (2 channels) | CAN add-on board | P5 (MCU side), P6 (bus side) |
-| Audio power amplifier | Amplifier add-on board | P3 (inputs and power), P4 (outputs) |
+| CAN transceiver | [CAN add-on board](../addons/can.md): SN65HVD1050, channel 1 only on the known board | P5 (MCU side), P6 (bus side) |
+| Audio power amplifier | [Amplifier add-on board](../addons/amplifier.md): TPA3116D2 class-D | P3 (inputs and power), P4 (outputs) |
 | 24 V → 12 V converter | External module wired through J6 (verify) | J6 |
 | MPU motherboard | Plugs in via P1, P9, P11, J1 | |
 | Monitor with touch | Cable | P10 |

@@ -11,7 +11,7 @@ Which CAN messages the firmware reads, and how each one becomes a health value. 
 | Protocol | TBD (SAE J1939 likely) |
 | Bitrate | TBD (J1939 commonly 250 kbit/s) |
 | Mode | TBD (listen-only recommended) |
-| Number of CAN channels | 2 (MCU CAN1 on PA11/PA12, CAN2 on PB12/PB13; transceivers on the CAN add-on board, part TBD) |
+| Number of CAN channels | 2 on the MCU (CAN1 on PA11/PA12, CAN2 on PB12/PB13). The known [CAN add-on](../hardware/addons/can.md) has one SN65HVD1050 transceiver for channel 1; CAN2 is unpopulated unless a second board is fitted |
 
 ## Signals
 

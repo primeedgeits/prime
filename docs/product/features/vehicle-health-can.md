@@ -8,7 +8,7 @@ Reads data from the vehicle's CAN bus to monitor the condition of the engine and
 
 ## Hardware
 
-The MCU on the baseboard has two CAN controllers (CAN1 on PA11/PA12, CAN2 on PB12/PB13). The transceivers sit on the CAN add-on board (P5/P6) and the bus lines reach the harness on P13. The MCU reads the bus and passes parameters to the MPU over UART; the MPU processes them and sends them to the backend. Whether the MCU decodes J1939 itself or forwards raw frames is TBD. See [Communications](../../hardware/baseboard/comms.md).
+The MCU on the baseboard has two CAN controllers (CAN1 on PA11/PA12, CAN2 on PB12/PB13). The transceiver (SN65HVD1050) sits on the [CAN add-on board](../../hardware/addons/can.md) on P5/P6; the known add-on serves channel 1 only. The bus lines reach the harness on P13. The MCU reads the bus and passes parameters to the MPU over UART; the MPU processes them and sends them to the backend. Whether the MCU decodes J1939 itself or forwards raw frames is TBD. See [Communications](../../hardware/baseboard/comms.md).
 
 ## Requirements
 

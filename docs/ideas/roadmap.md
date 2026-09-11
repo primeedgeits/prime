@@ -10,7 +10,7 @@ Phase 0 is in progress. Phases 1 to 4 are a suggested order for discussion, not 
 - [ ] Answer the open questions on the feature pages
 - [x] Hardware platform: two-board design exists (baseboard V2.1 with GD32F105 MCU, MPU motherboard). Documented 2026-09-11
 - [ ] Confirm the MPU part, its OS, and whether MPU/MCU software already exists
-- [ ] Collect the remaining schematics: MPU motherboard, CAN add-on, amplifier add-on
+- [ ] Collect the MPU motherboard schematic (CAN add-on and amplifier add-on documented 2026-09-11)
 - [ ] Choose the tech stack for firmware and backend
 
 ## Phase 1: Connected device (suggested)

@@ -31,15 +31,17 @@ Template:
 - Wrote the hardware section from the schematic "NVR STM BASEBOARD V2_1": overview, power and ignition, MCU pin map, connectors, audio paths, communications, digital I/O, PCB.
 - Updated the feature pages, architecture, glossary, code overview and CAN settings to match the hardware.
 - Added a stub for the MPU ↔ MCU UART protocol.
+- Documented the amplifier add-on (TPA3116D2) and the single-channel CAN add-on (SN65HVD1050) from their schematics.
+- USB topology clarified: whether the touch panel or the USB audio chip sits on hub port 1 varies by project.
 
 **Decisions**
 - [DEC-002: Two-processor architecture](decisions.md#dec-002-two-processor-architecture-mpu-mcu)
 
 **Next**
-- Copy the schematic PDF into `docs/hardware/files/NVR-STM-BASEBOARD-V2_1.pdf`.
+- Copy the three schematic PDFs into `docs/hardware/files/` (baseboard, amplifier, CAN sheet).
 - Confirm the exact MPU part, OS, and whether MPU software and MCU firmware already exist.
-- Resolve the USB topology question (touch panel direct vs on the hub; USB audio chip).
-- Get the MPU motherboard, CAN add-on and amplifier add-on schematics.
+- Get the MPU motherboard schematic.
+- Confirm whether a second CAN add-on is fitted for CAN2, and which termination parts are fitted on the CAN board.
 - Confirm items marked "verify" on the hardware pages, starting with the WAKEUP polarity, MCU_PWR_EN source and J6 pinout.
 
 **Open issues**

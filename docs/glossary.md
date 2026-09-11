@@ -45,3 +45,6 @@
 | RS-485 / RS-232 | Serial standards for wired links; RS-485 is differential and multi-drop, RS-232 is point-to-point. |
 | PTT | Push-to-talk switch on a microphone. |
 | IMU | Inertial measurement unit: accelerometer plus gyroscope. |
+| Class-D amplifier | An efficient switching audio amplifier; the TPA3116D2 on the amplifier add-on is one. |
+| BTL | Bridge-tied load: a speaker driven between two amplifier outputs instead of one output and ground, for more power from a low supply voltage. |
+| Bus termination | The 120 Ω resistor at each end of a CAN bus. A device in the middle of the bus should not add one. |

@@ -24,8 +24,8 @@ The MPU board and the baseboard are joined by four cables or headers on the base
 
 | Item | Where | Notes |
 |---|---|---|
-| CAN transceivers (2 channels) | CAN add-on board on P5/P6 | Part TBD; the MCU's CAN controllers are on the baseboard, the transceivers are not |
-| Audio power amplifier | Amplifier add-on board on P3/P4 | Drives passenger speakers and the driver speaker |
+| CAN transceiver | [CAN add-on board](../hardware/addons/can.md) on P5/P6 | SN65HVD1050; the known board serves channel 1 only. The MCU's CAN controllers are on the baseboard |
+| Audio power amplifier | [Amplifier add-on board](../hardware/addons/amplifier.md) on P3/P4 | TPA3116D2 class-D; drives the passenger speakers and the driver speaker |
 | 24 V → 12 V converter | External module wired through J6 (verify) | Buses have 24 V electrical systems |
 | Monitor with touch | Cable to P10 | VGA + USB touch + 5 V |
 | Cameras | Connect to the MPU board | Type and count TBD |
@@ -47,6 +47,7 @@ The MPU board and the baseboard are joined by four cables or headers on the base
 ## Open questions
 
 - Exact MPU part number, vendor and operating system.
-- Do schematics exist for the MPU motherboard, the CAN add-on and the amplifier add-on? They should be added here.
+- Does a schematic exist for the MPU motherboard? It should be added here.
+- Is a second CAN add-on fitted for CAN2?
 - What is the external power converter?
 - Target cost per unit?

@@ -44,6 +44,9 @@ How to use these docs (for AI assistants):
     - [Communications](docs/hardware/baseboard/comms.md): USB hub, 4G modem, SIM/eSIM, GNSS, CAN, RS-485, RS-232, MPU-MCU UART
     - [Digital I/O & Sensors](docs/hardware/baseboard/digital-io.md): Isolated inputs/outputs, SOS, tamper, LEDs, accelerometer
     - [PCB & Fabrication](docs/hardware/baseboard/pcb.md): Layer stack, fabrication notes, mounting, test points
+  - Add-on boards
+    - [Amplifier Add-on (50 W)](docs/hardware/addons/amplifier.md): TPA3116D2 class-D amplifier for the passenger and driver speakers
+    - [CAN Add-on](docs/hardware/addons/can.md): Single-channel SN65HVD1050 CAN transceiver board
 
 ## Code Documentation
 
