@@ -23,7 +23,7 @@ Every page has a **Copy URL for Claude** button that copies its raw Markdown add
 | A. Claude Code on the web (claude.ai/code) | A browser and the GitHub account | Yes, the whole repository | Yes: it edits files and pushes or opens a pull request |
 | B. Normal claude.ai chat with the GitHub connector | A claude.ai plan that allows custom connectors | Yes | Yes: it commits directly to the repository |
 | C. Normal claude.ai chat, no connector | Nothing | Yes, by fetching the web addresses | No: paste its text into the files yourself |
-| D. Claude Code in VS Code or the terminal | Claude Code installed on the PC | Yes, the local folder | Yes, then commit and push |
+| D. Claude Code on this PC: the Claude desktop app's Code tab, VS Code, or the terminal | The Claude desktop app or Claude Code installed on the PC | Yes, the local folder | Yes, then commit and push |
 
 ### A. Claude Code on the web (no VS Code)
 
@@ -56,15 +56,22 @@ Product Overview, the Development Log, and the pages related to today's task.
 
 The web fetch tool can summarise long pages, so for exact details such as message formats or signal tables, ask Claude to quote the content word for word. To save its edits, open the file on https://github.com/primeedgeits/prime, click the pencil icon, paste, and commit.
 
-### D. Claude Code in VS Code or the terminal
+### D. Claude Code on this PC (desktop app, VS Code or terminal)
 
-In the Claude Code terminal, inside the product's code repository, run:
+**Claude desktop app, no VS Code needed:**
 
-```text
-/add-dir C:\Users\Ansari\Desktop\prime
-```
+1. Install the Claude desktop app for Windows from https://claude.ai/download and sign in. Git must be installed on the PC (it is on this one).
+2. Click the **Code** tab at the top of the app (between **Chat** and **Cowork**).
+3. In the environment dropdown choose **Local**. (**Cloud** runs the session on Anthropic's servers against the GitHub repository instead, like claude.ai/code.)
+4. Click **Select folder** and choose `C:\Users\Ansari\Desktop\prime`.
+5. Pick a permission mode (**Manual** asks before every action; **Accept edits** approves file edits automatically) and type the task.
+6. Claude reads `CLAUDE.md`, edits the pages, and can run `git commit` and `git push` when asked (it asks for approval in Manual mode). The `+N −M` indicator opens a diff view to review changes before committing.
 
-Claude can then read the Markdown files directly and update them at the end of the session.
+**From the phone:** the mobile app cannot edit the folder itself, but it can drive a session running on this PC. Start the session on the PC, run `/remote-control` in it, then open the Claude app → **Code** on the phone and pick the session. Cloud sessions can also be started and continued from the phone.
+
+**VS Code or terminal:** inside the product's code repository, run `/add-dir C:\Users\Ansari\Desktop\prime` so Claude can read and update the docs at the end of the session.
+
+Claude Code on any of these surfaces needs a paid claude.ai plan (Pro, Max, Team or Enterprise).
 
 ## Project instructions for claude.ai (paste into the Project)
 
