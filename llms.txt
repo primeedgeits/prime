@@ -1,0 +1,45 @@
+# MNVR: Product & Code Documentation
+
+> MNVR (Mobile Network Video Recorder) is an in-vehicle device for heavy vehicles such as buses. It records camera video for surveillance, tracks the vehicle's location, monitors vehicle health over the CAN bus, keeps a two-way TCP connection with a backend server, and supports voice calls. This file lists every documentation page; each link points to a plain Markdown file.
+
+Base URL: https://primeedgeits.github.io/prime/ (all links below are relative to it, e.g. docs/overview.md is https://primeedgeits.github.io/prime/docs/overview.md).
+
+How to use these docs (for AI assistants):
+
+- Start with the Product Overview, then the Development Log for the latest state of work.
+- Every page begins with a status: Idea (not agreed), Draft (being worked out), or Decided (agreed; build to this). Don't treat Idea or Draft content as final.
+- TBD means unknown. Ask the user instead of guessing.
+- Decisions and their reasons are in Decision Records.
+
+## Start Here
+
+- [Product Overview](docs/overview.md): What MNVR is, its core capabilities, and open questions
+- [Working with AI Sessions](docs/ai-workflow.md): How to give a Claude session this context and keep the docs current
+- [Glossary](docs/glossary.md): Terms and abbreviations used across the docs
+
+## Product Ideas
+
+- [Idea Backlog](docs/ideas/backlog.md): Ideas that are not yet agreed features
+- [Roadmap](docs/ideas/roadmap.md): Development phases and milestones
+
+## Product Documentation
+
+- Features
+  - [Video Surveillance](docs/product/features/video-surveillance.md): Multi-camera recording, storage, live view and playback
+  - [GPS Tracking](docs/product/features/gps-tracking.md): Vehicle position reporting
+  - [Vehicle Health (CAN)](docs/product/features/vehicle-health-can.md): Engine and vehicle data from the CAN bus
+  - [Backend Communication (TCP)](docs/product/features/backend-tcp.md): Two-way link between device and backend
+  - [Voice Calls](docs/product/features/voice-calls.md): Calls between the vehicle and the control room
+- [System Architecture](docs/product/architecture.md): How the device, backend and dashboard fit together
+- [Hardware](docs/product/hardware.md): Device components, power, interfaces and environment
+
+## Code Documentation
+
+- [Codebase Overview](docs/code/overview.md): Repositories, tech stack and folder structure
+- [Setup & Build](docs/code/setup.md): Toolchains, building, flashing and running
+- Protocols
+  - [Device ↔ Backend TCP Protocol](docs/code/tcp-protocol.md): Connection, message framing, message types and flows
+  - [CAN Signal Map](docs/code/can-signals.md): Which CAN messages are read and how they are decoded
+- [Coding Conventions](docs/code/conventions.md): Style, Git workflow and documentation rules
+- [Development Log](docs/code/dev-log.md): Session-by-session record of what changed and what's next
+- [Decision Records](docs/code/decisions.md): Design decisions and the reasons behind them

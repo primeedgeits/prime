@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MNVR Docs</title>
+<meta name="description" content="Product and code documentation for MNVR, an in-vehicle video recorder for buses and heavy vehicles. AI assistants: llms.txt lists every page as plain Markdown.">
+<link rel="alternate" type="text/markdown" href="llms.txt" title="Documentation index (Markdown)">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" id="app-menu" type="button" aria-label="Show navigation" aria-controls="app-sidebar" aria-expanded="false">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+  </button>
+  <a class="brand" href="#/">MNVR <span>Docs</span></a>
+  <a class="ai-link" href="llms.txt" title="Index of every page as plain Markdown, for AI assistants">llms.txt</a>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="app-sidebar" aria-label="Documentation">
+    <input type="search" id="app-filter" placeholder="Filter pages…" aria-label="Filter pages" autocomplete="off">
+    <div id="app-nav"></div>
+  </nav>
+
+  <main class="main">
+    <div class="main-inner">
+      <div class="doc-bar" id="app-docbar" hidden>
+        <ol class="crumbs" id="app-crumbs"></ol>
+        <div class="doc-actions">
+          <a id="app-raw" href="llms.txt" target="_blank" rel="noopener">Raw Markdown</a>
+          <button id="app-copy" type="button">Copy URL for Claude</button>
+        </div>
+      </div>
+
+      <article class="doc" id="app-content">
+        <h1>MNVR Product Documentation</h1>
+        <p>MNVR (Mobile Network Video Recorder) is an in-vehicle device for heavy vehicles such as buses. It records camera video for surveillance, tracks the vehicle's location, monitors vehicle health over the CAN bus, keeps a two-way TCP connection with a backend server, and supports voice calls.</p>
+        <p><strong>AI assistants:</strong> every page on this site is a plain Markdown file. Read <a href="llms.txt">llms.txt</a> for the full list of pages, then fetch the ones you need.</p>
+        <noscript><p>The navigation needs JavaScript. You can still read every page as Markdown from <a href="llms.txt">llms.txt</a>.</p></noscript>
+      </article>
+
+      <nav class="pager" id="app-pager" aria-label="Previous and next page"></nav>
+    </div>
+  </main>
+</div>
+<div class="scrim" id="app-scrim" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
