@@ -4,7 +4,11 @@
 
 ## Summary
 
-Voice communication with the vehicle. Who talks to whom, and the technology used, are TBD.
+Voice communication with the vehicle. Who talks to whom is TBD.
+
+## Hardware
+
+The baseboard has a complete call audio path: the 4G module's PCM interface ↔ ALC5616 codec ↔ audio switches ↔ external microphone and the driver speaker through the amplifier add-on. The codec is configured by the 4G module over I2C. The MPU selects call mode with the CALL-SW and AMP_SW lines. Calls are therefore cellular voice calls made through the 4G module (VoLTE or circuit-switched, depending on the module and network). A VoIP call would instead use the USB audio path to the MPU. See [Audio Paths](../../hardware/baseboard/audio.md).
 
 ## Requirements
 

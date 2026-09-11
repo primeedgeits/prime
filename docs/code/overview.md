@@ -17,8 +17,11 @@ No product code exists yet. Fill this page in as repositories are created.
 
 | Area | Choice | Decision |
 |---|---|---|
-| Device operating system | TBD | |
-| Firmware language | TBD | |
+| Baseboard MCU | GD32F105RBT6, Arm Cortex-M3 (existing hardware) | [MCU Pin Map](../hardware/baseboard/mcu-pinmap.md) |
+| MCU firmware language and toolchain | TBD (C expected; GD32 firmware library or bare-metal) | |
+| MPU (application processor) | MC6630, exact part TBD | [MPU Motherboard](../hardware/mpu-board.md) |
+| MPU operating system | TBD | |
+| MPU application language | TBD | |
 | Backend language and framework | TBD | |
 | Database | TBD | |
 | Dashboard framework | TBD | |

@@ -29,3 +29,19 @@
 | Ignition sense | An input that tells the device whether the vehicle's ignition is on. |
 | ADAS / DMS | Advanced Driver Assistance Systems (such as collision warning) / Driver Monitoring System (such as fatigue detection). |
 | AIS-140 | Indian Automotive Industry Standard for tracking devices and emergency buttons in public transport vehicles. |
+| MPU | In this project: the application processor board (the "motherboard"). Not to be confused with the MPU-6050 accelerometer chip. |
+| MCU | Microcontroller. Here the GD32F105RBT6 on the baseboard. |
+| Baseboard | The extension board the MPU motherboard plugs into; carries power, MCU, 4G, GNSS, audio and all vehicle connectors. |
+| Add-on board | A small board plugged into the baseboard: the CAN transceiver add-on and the amplifier add-on. |
+| PCM / I2S | Serial digital audio interfaces. The 4G module sends call audio to the codec over PCM. |
+| Codec (audio) | Chip that converts between digital and analogue audio. Here the ALC5616. |
+| eSIM | A SIM soldered to the board (MFF2 package) instead of a removable card. |
+| Mini PCIe | The 52-pin socket format used by the 4G module. |
+| TVS | Transient voltage suppressor diode; absorbs voltage spikes from the vehicle wiring. |
+| Optocoupler | Isolates a signal with an LED and light sensor, so vehicle wiring faults cannot reach the MCU. |
+| LDO | Low-dropout linear regulator. |
+| Buck converter | Switching regulator that steps voltage down efficiently. |
+| SWD | Serial Wire Debug; the two-wire interface used to program and debug the MCU. |
+| RS-485 / RS-232 | Serial standards for wired links; RS-485 is differential and multi-drop, RS-232 is point-to-point. |
+| PTT | Push-to-talk switch on a microphone. |
+| IMU | Inertial measurement unit: accelerometer plus gyroscope. |

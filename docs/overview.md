@@ -18,6 +18,10 @@ MNVR (Mobile Network Video Recorder) is an in-vehicle device for heavy vehicles 
 
 The device sits in the vehicle and connects to cameras, the vehicle's CAN bus, a GNSS antenna, and audio hardware for calls. It reaches the backend server over a 4G mobile connection. See [System Architecture](product/architecture.md) for the diagram.
 
+## Hardware at a glance
+
+Two boards, two processors. The **MPU motherboard** (MC6630 application processor, exact part TBD) handles the display and touch, cameras, next-stop announcements and the backend link. The **baseboard V2.1** carries a GD32F105 microcontroller that handles power and ignition, GNSS, two CAN channels, the accelerometer and vehicle I/O, and forwards its data to the MPU over UART. The baseboard also hosts the 4G module, SIM/eSIM, USB hub, audio codec and audio switches. See [Hardware Overview](product/hardware.md).
+
 ## Who it's for
 
 TBD. Likely bus fleet operators and their control rooms; to confirm.

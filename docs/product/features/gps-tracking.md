@@ -6,6 +6,10 @@
 
 Determines the vehicle's position with satellite positioning and reports it to the backend.
 
+## Hardware
+
+The GNSS receiver (Quectel L89 / L86 / LC86L footprint) is on the baseboard and is read by the MCU over USART2. The MCU forwards fixes to the MPU over UART; the MPU processes them and sends them to the backend over 4G. The receiver has a backup battery for warm starts and its power is switched by the MCU. See [Communications](../../hardware/baseboard/comms.md).
+
 ## Requirements
 
 | ID | Requirement | Status |

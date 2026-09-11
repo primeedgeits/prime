@@ -9,6 +9,10 @@ The device keeps a TCP connection to the backend server over 4G. The link works 
 - **Device → backend:** location, health data, events and alarms, device status.
 - **Backend → device:** commands such as configuration changes, video requests and call control.
 
+## Hardware
+
+The MPU owns the backend link. The 4G module (mini PCIe socket on the baseboard, USB hub port 2) provides the network connection. The MCU has no network access of its own; everything it collects reaches the backend through the MPU. See [Communications](../../hardware/baseboard/comms.md).
+
 ## Requirements
 
 | ID | Requirement | Status |

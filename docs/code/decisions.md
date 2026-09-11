@@ -19,6 +19,15 @@ Template:
 
 ---
 
+## DEC-002: Two-processor architecture (MPU + MCU)
+
+- **Date:** recorded 2026-09-11 (the design predates these docs)
+- **Status:** Accepted (existing design)
+- **Context:** The device must do heavy work (video, display, networking) and also real-time, always-on work (ignition sensing, power hold, CAN, GNSS, vehicle I/O).
+- **Decision:** An application processor (MC6630) on the motherboard handles display, cameras, announcements and the backend link. A GD32F105 microcontroller on the baseboard handles power, GNSS, CAN, sensors and I/O, and feeds the MPU over UART.
+- **Reason:** Inferred, confirm with the user: real-time and low-power tasks are more reliable on a microcontroller, and the MCU can manage power-up and safe shutdown of the MPU.
+- **Consequences:** Two firmware/software stacks, and a UART protocol between them that must be designed and versioned ([MPU ↔ MCU UART Protocol](mpu-mcu-uart.md)).
+
 ## DEC-001: Documentation in Markdown on GitHub Pages
 
 - **Date:** 2026-09-11

@@ -7,6 +7,7 @@ Product and code documentation for MNVR, an in-vehicle video recorder for buses.
 - `llms.txt` is the only navigation source. Each `## ` heading becomes a sidebar card; nested `- [Title](path): description` items become the collapsible tree (indent 2 spaces per level; an item without a link is a group).
 - Pages are Markdown files under `docs/`. `assets/app.js` fetches and renders them in the browser (marked, highlight.js and mermaid from cdnjs).
 - `.nojekyll` stops GitHub Pages from converting `.md` files to HTML, which keeps the raw Markdown fetchable. Don't delete it.
+- Hardware pages live in `docs/hardware/`; source files such as schematic PDFs go in `docs/hardware/files/`. Link to them with relative paths; the viewer resolves non-Markdown links from the site root.
 
 ## Editing rules
 

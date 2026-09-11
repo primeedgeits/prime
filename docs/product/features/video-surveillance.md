@@ -6,6 +6,10 @@
 
 Records video from cameras mounted on the vehicle and stores it on the device. How the backend accesses video is TBD.
 
+## Hardware
+
+Cameras connect to the MPU motherboard, not the baseboard, and the MPU handles all camera operations. Camera type, count and storage are TBD. See [MPU Motherboard](../../hardware/mpu-board.md).
+
 ## Requirements
 
 | ID | Requirement | Status |
