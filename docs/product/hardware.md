@@ -2,7 +2,7 @@
 
 > **Status:** Draft · **Updated:** 2026-09-11
 
-MNVR is built from two boards with two main processors. The **MPU motherboard** does the heavy work (display, cameras, announcements, backend communication). The **baseboard** is the extension board it plugs into: it holds the microcontroller, the 4G module, the GNSS receiver, all vehicle-facing connectors, the audio hardware and the power supply.
+MNVR is built from two boards with two main processors. For the section-by-section signal paths and drivers, see [Hardware Architecture](../architecture/hardware.md). The **MPU motherboard** does the heavy work (display, cameras, announcements, backend communication). The **baseboard** is the extension board it plugs into: it holds the microcontroller, the 4G module, the GNSS receiver, all vehicle-facing connectors, the audio hardware and the power supply.
 
 | Board | Processor | Responsibilities | Details |
 |---|---|---|---|

@@ -24,6 +24,22 @@ Template:
 
 ---
 
+## 2026-09-11: Architecture card added
+
+**Done**
+- New "Architecture" sidebar card holding System Architecture (moved from Product Documentation), a new Hardware Architecture page and a Software Architecture placeholder.
+- Hardware Architecture traces each product section through the schematics: components, signal path, and the driver or firmware module on each processor, plus a driver inventory and a gaps list.
+
+**Decisions**
+- None.
+
+**Next**
+- Product owner to define the Software Architecture page.
+- MPU board schematic and OS choice, which fix most TBDs on the Hardware Architecture page.
+
+**Open issues**
+- None.
+
 ## 2026-09-11: Product sections added
 
 **Done**

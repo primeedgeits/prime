@@ -42,6 +42,12 @@ How to use these docs (for AI assistants):
 - Settings Management
   - [Overview](docs/sections/settings/overview.md): Nothing defined yet; proposed settings areas
 
+## Architecture
+
+- [System Architecture](docs/product/architecture.md): How the MPU board, baseboard, backend and dashboard fit together
+- [Hardware Architecture](docs/architecture/hardware.md): Section-by-section hardware flow from the schematics: components, signal paths, drivers
+- [Software Architecture](docs/architecture/software.md): Under construction
+
 ## Product Documentation
 
 - Features
@@ -50,7 +56,6 @@ How to use these docs (for AI assistants):
   - [Vehicle Health (CAN)](docs/product/features/vehicle-health-can.md): Engine and vehicle data from the CAN bus
   - [Backend Communication (TCP)](docs/product/features/backend-tcp.md): Two-way link between device and backend
   - [Voice Calls](docs/product/features/voice-calls.md): Calls between the vehicle and the control room
-- [System Architecture](docs/product/architecture.md): How the MPU board, baseboard, backend and dashboard fit together
 - Hardware
   - [Hardware Overview](docs/product/hardware.md): Two-board design (MPU motherboard + baseboard) and what each board does
   - [MPU Motherboard](docs/hardware/mpu-board.md): The MC6630 application-processor board and its links to the baseboard
