@@ -75,6 +75,7 @@ How to use these docs (for AI assistants):
 ## Code Documentation
 
 - [Codebase Overview](docs/code/overview.md): Repositories, tech stack and folder structure
+- [minixvr Software Documentation](docs/code/minixvr-olectra.md): What the existing Qt on-board application does: threads, packets, recording, OTA, PIS, calls, CAN, known risks
 - [Setup & Build](docs/code/setup.md): Toolchains, building, flashing and running
 - Protocols
   - [Device ↔ Backend TCP Protocol](docs/code/tcp-protocol.md): Connection, message framing, message types and flows
@@ -83,3 +84,8 @@ How to use these docs (for AI assistants):
 - [Coding Conventions](docs/code/conventions.md): Style, Git workflow and documentation rules
 - [Development Log](docs/code/dev-log.md): Session-by-session record of what changed and what's next
 - [Decision Records](docs/code/decisions.md): Design decisions and the reasons behind them
+
+## Standards & Testing
+
+- [IS 16833 Annex D Summary](docs/standards/is16833-annex-d.md): Requirements, protocol, type tests and acceptance criteria of the bus CCTV + tracking standard
+- [IS 16833 Test Checklist](docs/standards/is16833-test-checklist.md): Requirement-to-code mapping and executable test cases for minixvr

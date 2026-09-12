@@ -1,6 +1,6 @@
 # Development Log
 
-> **Status:** Decided · **Updated:** 2026-09-11
+> **Status:** Decided · **Updated:** 2026-09-12
 
 A record of each work session, newest first. Add an entry at the end of every session so the next one knows where things stand.
 
@@ -21,6 +21,26 @@ Template:
 **Open issues**
 - ...
 ```
+
+---
+
+## 2026-09-12: Existing application documented and IS 16833 test checklist added
+
+**Done**
+- New page [minixvr Software Documentation](minixvr-olectra.md): full read of the existing Qt application (threads, modem bring-up, `&PEIS` packet formats, recording, playback, OTA, PIS, calls, CAN, UI map) plus 14 code observations that feed the tests.
+- New "Standards & Testing" sidebar card with [IS 16833 Annex D Summary](../standards/is16833-annex-d.md) and [IS 16833 Test Checklist](../standards/is16833-test-checklist.md) (requirement-to-code mapping, about 150 test cases, post-environmental smoke set, installation checks).
+- Codebase Overview now lists the existing application; Software Architecture links to it.
+
+**Decisions**
+- None. The hard-coded admin credentials and the vendor config host are deliberately not reproduced in these public pages.
+
+**Next**
+- Run the checklist on the current build and record results; the GAP-tagged cases are expected to fail.
+- Put the `MNVR_VER-1_OLECTRA` source under git (with build outputs ignored).
+- Decide which IS 16833 gaps (emergency path, 40 000-log store, standard packet fields, audio, event retention, browser download) go on the roadmap.
+
+**Open issues**
+- Health packet HDD flag reads the ignition bit; telemetry threads spin at 100 % CPU; primary TCP socket leaks per send; baseboard OTA retries forever on NACK.
 
 ---
 

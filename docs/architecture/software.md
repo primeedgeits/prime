@@ -17,3 +17,4 @@ Suggested outline to fill in when ready (Claude's proposal, not decided):
 - [Hardware Architecture](hardware.md)
 - [System Architecture](../product/architecture.md)
 - [Codebase Overview](../code/overview.md)
+- [minixvr Software Documentation](../code/minixvr-olectra.md): how the existing application is structured today

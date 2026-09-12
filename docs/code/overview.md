@@ -1,15 +1,16 @@
 # Codebase Overview
 
-> **Status:** Draft · **Updated:** 2026-09-11
+> **Status:** Draft · **Updated:** 2026-09-12
 
-No product code exists yet. Fill this page in as repositories are created.
+An existing Qt application (`minixvr`) runs on the current MC6630 hardware; it is documented in [minixvr Software Documentation](minixvr-olectra.md) but is not yet in a git repository. Fill this page in as repositories are created.
 
 ## Repositories
 
 | Repository | Contents | Stack | Link |
 |---|---|---|---|
 | prime | This documentation site | Markdown, HTML/CSS/JS | https://github.com/primeedgeits/prime |
-| TBD | Device firmware | TBD | |
+| TBD (local folder `MNVR_VER-1_OLECTRA`) | Existing MPU application `minixvr` | C++, Qt 4 embedded, vendor `mal`/`XD` media libraries | [minixvr Software Documentation](minixvr-olectra.md) |
+| TBD | Device firmware (new) | TBD | |
 | TBD | Backend server | TBD | |
 | TBD | Web dashboard | TBD | |
 
